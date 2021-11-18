@@ -56,11 +56,11 @@ useEffect(() => {
     // console.log(cityName)
     // console.log(temp)
     return(
-        <div className="flex-col text-center text-text border ">
+        <div className="flex-col  text-center text-text border rounded-t-lg ">
      
          {!cambio ? 
              <>
-              <div className="flex justify-center ">
+              <div className="flex justify-center bg-blue-400 rounded-t-lg ">
                     {/* <img className=" max-w-1/10 max-h-1/10 fill-current " src={timer}/> 
                      */}
                     <svg className=" max-w-1/10 max-h-1/10 fill-current my-4" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg"><title/><g><path d="M48,0A36.0393,36.0393,0,0,0,12,36c0,32.5078,30.9375,57.6328,32.25,58.6875a6.0134,6.0134,0,0,0,7.5,0C53.0625,93.6328,84,68.5078,84,36A36.0393,36.0393,0,0,0,48,0Zm0,81.9492C40.418,74.707,24,56.6367,24,36a24,24,0,0,1,48,0C72,56.6367,55.582,74.707,48,81.9492Z"/><path d="M48,24A12,12,0,1,0,60,36,12.0157,12.0157,0,0,0,48,24Z"/></g></svg>
@@ -83,9 +83,9 @@ useEffect(() => {
                 weather[0].description === "light intensity drizzle" ? drizzle  :
                 weather[0].description === "snow" ? snow  :null
                 } alt="description"/>
-                <h3 className="text-5xl mt-4">{Math.trunc((temp)-273.15)+"º"}</h3>
-                <section className="flex justify-between content-center rounded mx-6 my-4 py-4 px-4 bg-whiteAplha"> 
-                    <div className="flex-col w-16">
+                <h3 className="text-5xl  mt-4">{Math.trunc((temp)-273.15)+"º"}</h3>
+                <section className="flex justify-between content-center rounded mx-6 my-4 py-4 px-4 bg-green-300"> 
+                    <div className="flex-col w-16 ">
                         <img className="max-w-3/4 max-h-3/4 inline"  src={timer} alt="description"/>
                         <h3 className="text-base text-black">{hour}</h3>
                     </div>

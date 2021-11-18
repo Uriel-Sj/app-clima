@@ -87,12 +87,12 @@ return(
                 <h2 className="mt-14 text-4xl text-black">{data?.name}</h2>     
             </div>
             <div className="flex justify-between items-center my-4">
-                <h3 className="w-32 text-left text-black" >Temperature max</h3>
+                <h3 className="w-32 text-left bg-red-400 text-black" >Temperature max</h3>
                 <img className="max-w-1/6 max-h-1/6 inline"  src={temperatureMax} alt="description"/>
                 <h3 className="w-10 text-black">{Math.trunc((data?.main.temp_max)-273.15)+"º"}</h3>
             </div>           
             <div className="flex justify-between items-center my-4">
-                <h3  className="w-32 text-left text-black" >Temperature min</h3>
+                <h3  className="w-32 text-left bg-yellow-300 text-black" >Temperature min</h3>
                 <img className="max-w-1/6 max-h-1/6 inline"  src={temperatureMin} alt="description"/>
                 <h3 className="w-10 text-black">{Math.trunc((data?.main.temp_min)-273.15)+"º"}</h3>
             </div>
